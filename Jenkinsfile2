@@ -9,6 +9,13 @@ def diasemana = dia.getDayOfWeek()
 pipeline{
     agent any
     stages{
+        stage('Fecha'){
+            steps{
+                script{
+                    println 'Fecha Actual ' + dia.getDayOfMonth() + '/' + dia.getMonthValue() + '/' + dia.getYear()
+                }
+            }
+        }
         stage('Futbol'){
             steps{
                 script{
