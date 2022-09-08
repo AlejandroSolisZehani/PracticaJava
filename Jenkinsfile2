@@ -5,36 +5,69 @@ def futbol = 'Va el delantero tira y le da en la cara al portero'
 def medicos = 'Ha sido operado de apendicitis lo bueno es que ya no le va a volver a dar'
 def politicos = 'Van 2 politicos y no roban'
 def dia = LocalDate.now()
+def diasemana = dia.getDayOfWeek()
 pipeline{
     agent any
     stages{
-        stage('AA12'){
+        stage('Futbol'){
             steps{
                 script{
-                    def diasemana = dia.getDayOfWeek()
                     switch(diasemana){
                         case 'MONDAY':
+                            println 'Hoy es Lunes'
                             println futbol
-                            break
-                        case  'TUESDAY':
-                            println politicos
-                            break
-                        case 'WEDNESDAY':
-                            println medicos
-                            break
-                        case 'THURSDAY':
-                            println informatico
-                            break
-                        case 'FRIDAY':
-                            println negro
-                            break
-                        default:
-                            println 'No es ningun dia'
                         break
+                    }
                 }
-                    
             }
         }
-    }
+        stage('Politicos'){
+            steps{
+                script{
+                    switch(diasemana){
+                        case 'TUESDAY':
+                            println 'Hoy es Martes'
+                            println politicos
+                        break
+                    }
+                }
+            }
+        }
+        stage('Medicos'){
+            steps{
+                script{
+                    switch(diasemana){
+                        case 'WEDNESDAY':
+                            println 'Hoy es Miercoles'
+                            println medicos
+                        break
+                    }
+                }
+            }
+        }
+        stage('Informaticos'){
+            steps{
+                script{
+                    switch(diasemana){
+                        case 'THURSDAY':
+                            println 'Hoy es Jueves'
+                            println informatico
+                        break
+                    }
+                }
+            }
+        }
+        stage('Humor Negro'){
+            steps{
+                script{
+                    switch(diasemana){
+                        case 'FRIDAY':
+                            println 'Hoy es Viernes'
+                            println negro
+                        break
+                    }
+                }
+            }
+        }
 }
 }
