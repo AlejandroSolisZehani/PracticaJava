@@ -25,7 +25,7 @@ public class Principal {
 				sc.close();
 				System.out.println(sb);
 			}
-			StringBuilder Jenkins = new StringBuilder();
+			
 		}catch(Exception e) {
 			e.printStackTrace();
 		}

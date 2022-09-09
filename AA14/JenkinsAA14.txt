@@ -1,0 +1,19 @@
+import java.time.LocalDate
+pipeline{
+stages{
+stage('Build'){
+steps{
+script{
+println 'En la fecha de ' + LocalDate.now() + ' Se han producido estos chocolates'
+println 'Nombre					CANTIDAD PRODUCIDA'
+println '- Chocolate Blanco			1000'
+println '- Choclate Negro				1500'
+println '- Chocolate con almendras		1200'
+println '- Chocolate con castañas de caju	1300'
+println '- Chocolate en rama			100'
+println '- Chocolate con 70% de cacao		1500'
+}
+}
+}
+}
+}
