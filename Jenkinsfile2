@@ -1,0 +1,80 @@
+import java.time.LocalDate
+def informatico = 'Quise ligar con una informatica pero no se de JAVA asi que ella no se deJAVA'
+def negro = 'Que hace un niño en un columpio en siria marear al francotirador'
+def futbol = 'Va el delantero tira y le da en la cara al portero'
+def medicos = 'Ha sido operado de apendicitis lo bueno es que ya no le va a volver a dar'
+def politicos = 'Van 2 politicos y no roban'
+def dia = LocalDate.now()
+def diasemana = dia.getDayOfWeek()
+pipeline{
+    agent any
+    stages{
+        stage('Fecha'){
+            steps{
+                script{
+                    println 'Fecha Actual ' + dia.getDayOfMonth() + '/' + dia.getMonthValue() + '/' + dia.getYear()
+                }
+            }
+        }
+        stage('Futbol'){
+            steps{
+                script{
+                    switch(diasemana){
+                        case 'MONDAY':
+                            println 'Hoy es Lunes'
+                            println futbol
+                        break
+                    }
+                }
+            }
+        }
+        stage('Politicos'){
+            steps{
+                script{
+                    switch(diasemana){
+                        case 'TUESDAY':
+                            println 'Hoy es Martes'
+                            println politicos
+                        break
+                    }
+                }
+            }
+        }
+        stage('Medicos'){
+            steps{
+                script{
+                    switch(diasemana){
+                        case 'WEDNESDAY':
+                            println 'Hoy es Miercoles'
+                            println medicos
+                        break
+                    }
+                }
+            }
+        }
+        stage('Informaticos'){
+            steps{
+                script{
+                    switch(diasemana){
+                        case 'THURSDAY':
+                            println 'Hoy es Jueves'
+                            println informatico
+                        break
+                    }
+                }
+            }
+        }
+        stage('Humor Negro'){
+            steps{
+                script{
+                    switch(diasemana){
+                        case 'FRIDAY':
+                            println 'Hoy es Viernes'
+                            println negro
+                        break
+                    }
+                }
+            }
+        }
+}
+}
