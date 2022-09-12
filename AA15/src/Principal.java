@@ -1,5 +1,8 @@
 import org.json.*;
 import java.net.URL;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.net.HttpURLConnection;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -38,6 +41,20 @@ public class Principal {
 				Alejandro.setProvincias(ProvinciasArrayList);
 				System.out.println(Alejandro.toString());
 				Alejandro.ImplementarProvincias();
+			}
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			File AA15 = new File("AA15"+LocalDate.now()+".txt");
+			if(AA15.exists()) {
+				AA15.delete();
+			}
+			for(int i =0;i<ProvinciasArrayList.size();i++) {
+				BufferedWriter bw = new BufferedWriter(new FileWriter("AA15"+LocalDate.now()+".txt",true));
+				bw.write(ProvinciasArrayList.get(i).toString());
+				bw.newLine();
+				bw.close();
 			}
 		}catch(Exception e) {
 			e.printStackTrace();
