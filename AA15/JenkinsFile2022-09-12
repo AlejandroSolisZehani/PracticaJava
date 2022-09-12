@@ -1,0 +1,65 @@
+import java.time.LocalDate
+pipeline{
+    agent any
+    stages{
+        stage('main'){
+            steps{
+                script{
+println 'Datos del Usuario Nombre: Alejandro Solis Zehani ID: 1 Fecha: 2022-09-12 '
+println 'Nombre Provincia: A Coruña Capital de la Provincia: A Coruña'
+println 'Nombre Provincia: Alacant Capital de la Provincia: Alacant'
+println 'Nombre Provincia: Albacete Capital de la Provincia: Albacete'
+println 'Nombre Provincia: Almería Capital de la Provincia: Almería'
+println 'Nombre Provincia: Araba Capital de la Provincia: Araba'
+println 'Nombre Provincia: Asturias Capital de la Provincia: Asturias'
+println 'Nombre Provincia: Badajoz Capital de la Provincia: Badajoz'
+println 'Nombre Provincia: Barcelona Capital de la Provincia: Barcelona'
+println 'Nombre Provincia: Bizkaia Capital de la Provincia: Bizkaia'
+println 'Nombre Provincia: Burgos Capital de la Provincia: Burgos'
+println 'Nombre Provincia: Cantabria Capital de la Provincia: Cantabria'
+println 'Nombre Provincia: Castelló Capital de la Provincia: Castelló'
+println 'Nombre Provincia: Ceuta Capital de la Provincia: Ceuta'
+println 'Nombre Provincia: Ciudad Real Capital de la Provincia: Ciudad Real'
+println 'Nombre Provincia: Cuenca Capital de la Provincia: Cuenca'
+println 'Nombre Provincia: Cáceres Capital de la Provincia: Cáceres'
+println 'Nombre Provincia: Cádiz Capital de la Provincia: Cádiz'
+println 'Nombre Provincia: Córdoba Capital de la Provincia: Córdoba'
+println 'Nombre Provincia: Gipuzcoa Capital de la Provincia: Gipuzcoa'
+println 'Nombre Provincia: Girona Capital de la Provincia: Girona'
+println 'Nombre Provincia: Granada Capital de la Provincia: Granada'
+println 'Nombre Provincia: Guadalajara Capital de la Provincia: Guadalajara'
+println 'Nombre Provincia: Huelva Capital de la Provincia: Huelva'
+println 'Nombre Provincia: Huesca Capital de la Provincia: Huesca'
+println 'Nombre Provincia: Illes Balears Capital de la Provincia: Illes Balears'
+println 'Nombre Provincia: Jaén Capital de la Provincia: Jaén'
+println 'Nombre Provincia: La Rioja Capital de la Provincia: La Rioja'
+println 'Nombre Provincia: Las Palmas Capital de la Provincia: Las Palmas'
+println 'Nombre Provincia: León Capital de la Provincia: León'
+println 'Nombre Provincia: Lleida Capital de la Provincia: Lleida'
+println 'Nombre Provincia: Lugo Capital de la Provincia: Lugo'
+println 'Nombre Provincia: Madrid Capital de la Provincia: Madrid'
+println 'Nombre Provincia: Melilla Capital de la Provincia: Melilla'
+println 'Nombre Provincia: Murcia Capital de la Provincia: Murcia'
+println 'Nombre Provincia: Málaga Capital de la Provincia: Málaga'
+println 'Nombre Provincia: Navarra Capital de la Provincia: Navarra'
+println 'Nombre Provincia: Ourense Capital de la Provincia: Ourense'
+println 'Nombre Provincia: Palencia Capital de la Provincia: Palencia'
+println 'Nombre Provincia: Pontevedra Capital de la Provincia: Pontevedra'
+println 'Nombre Provincia: Salamanca Capital de la Provincia: Salamanca'
+println 'Nombre Provincia: Santa Cruz de Tenerife Capital de la Provincia: Santa Cruz de Tenerife'
+println 'Nombre Provincia: Segovia Capital de la Provincia: Segovia'
+println 'Nombre Provincia: Sevilla Capital de la Provincia: Sevilla'
+println 'Nombre Provincia: Soria Capital de la Provincia: Soria'
+println 'Nombre Provincia: Tarragona Capital de la Provincia: Tarragona'
+println 'Nombre Provincia: Teruel Capital de la Provincia: Teruel'
+println 'Nombre Provincia: Toledo Capital de la Provincia: Toledo'
+println 'Nombre Provincia: Valladolid Capital de la Provincia: Valladolid'
+println 'Nombre Provincia: València Capital de la Provincia: València'
+println 'Nombre Provincia: Zamora Capital de la Provincia: Zamora'
+println 'Nombre Provincia: Zaragoza Capital de la Provincia: Zaragoza'
+println 'Nombre Provincia: Ávila Capital de la Provincia: Ávila'
+}
+}
+}
+}
+}
